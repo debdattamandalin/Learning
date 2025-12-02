@@ -21,7 +21,6 @@ while True:
 
         while True:
             htp = input("Would You Like To Know How To Play This Game? (Yes/No)\n")
-
             if htp.lower() == "yes":
                 print("How To Play")
                 break
@@ -30,7 +29,6 @@ while True:
                 break
             else:
                 print("Wrong Input Please Try Again! \n")
-
         break
 
     else:
@@ -51,7 +49,16 @@ while True:
         print("Wrong Input, Please Try Again. \n")
 
 if tossh == toss:
-    print("You won the toss!")
+    print("You Won The Toss!")
+    while True:
+        bob = input("Do You Want To Chose Batting Or Balling? (Bat/Ball) \n")
+
+        if bob.lower() == "bat":
+            print("User Chose Batting")
+        elif bob.lower() == "ball":
+            print("User Chose Balling")
+        else:
+            print("Wrong Input Try Again!")
 else:
     print("I won the toss")
 
